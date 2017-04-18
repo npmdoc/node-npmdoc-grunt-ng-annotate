@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/mgol/grunt-ng-annotate"
-
-    >grunt-ng-annotate (v3.0.0)</a>
+    <a href="https://github.com/mgol/grunt-ng-annotate">grunt-ng-annotate (v3.0.0)</a>
 </h1>
 <h4>Add, remove and rebuild AngularJS dependency injection annotations.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-ng-annotate">module grunt-ng-annotate</a><ol>
 
@@ -100,12 +93,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">ng_annotate = function (grunt) {
 
-    const getPathFromTo = (fromFile, toFile) =&#x3e;
+    const getPathFromTo = (fromFile, toFile) =&gt;
         path.relative(path.resolve(path.dirname(fromFile)), path.resolve(toFile))
             // URLs should have UNIX-y paths.
-            .replace(/\\+/g, &#x27;/&#x27;);
+            .replace(/\\+/g, '/');
 
-    const handleOptions = options =&#x3e; {
+    const handleOptions = options =&gt; {
         const finalOptions = cloneDeep(options);
 
         if (!finalOptions.ngAnnotateOptions) {
@@ -149,67 +142,67 @@
 
         if (options.transformDest != null) {
             grunt.fail.fatal([
-                &#x27;The `transformDest` option is no longer supported.&#x27;,
-                &#x27;The following configuration:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        options: {&#x27;,
-                &#x27;            transformDest: function (srcPath) {&#x27;,
-                &#x27;                return doSomethingWithSrcPath(srcPath);&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        },&#x27;,
-                &#x27;        src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;    },&#x27;,
-                &#x27;&#x27;,
-                &#x27;should be replaced by:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        files: [&#x27;,
-                &#x27;           {&#x27;,
-                &#x27;               expand: true,&#x27;,
-                &#x27;               src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;               rename: function (destPath, srcPath) {&#x27;,
-                &#x27;                   return doSomethingWithSrcPath(srcPath);&#x27;,
-                &#x27;               },&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        ],&#x27;,
-                &#x27;    },&#x27;,
-            ].join(&#x27;\n&#x27;));
+                'The `transformDest` option is no longer supported.',
+                'The following configuration:',
+                '',
+                '    app: {',
+                '        options: {',
+                '            transformDest: function (srcPath) {',
+                '                return doSomethingWithSrcPath(srcPath);',
+                '            },',
+                '        },',
+                '        src: [\'app/*.js\'],',
+                '    },',
+                '',
+                'should be replaced by:',
+                '',
+                '    app: {',
+                '        files: [',
+                '           {',
+                '               expand: true,',
+                '               src: [\'app/*.js\'],',
+                '               rename: function (destPath, srcPath) {',
+                '                   return doSomethingWithSrcPath(srcPath);',
+                '               },',
+                '            },',
+                '        ],',
+                '    },',
+            ].join('\n'));
         }
 
         if (options.outputFileSuffix != null) {
             grunt.fail.fatal([
-                &#x27;The `outputFileSuffix` option is no longer supported.&#x27;,
-                &#x27;The following configuration:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        options: {&#x27;,
-                &#x27;            outputFileSuffix: \&#x27;-annotated\&#x27;,&#x27;,
-                &#x27;        },&#x27;,
-                &#x27;        src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;    },&#x27;,
-                &#x27;&#x27;,
-                &#x27;should be replaced by:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        files: [&#x27;,
-                &#x27;            {&#x27;,
-                &#x27;               expand: true,&#x27;,
-                &#x27;               src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;               rename: function (destPath, srcPath) {&#x27;,
-                &#x27;                   return srcPath + \&#x27;-annotated\&#x27;;&#x27;,
-                &#x27;               },&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        ],&#x27;,
-                &#x27;    },&#x27;,
-            ].join(&#x27;\n&#x27;));
+                'The `outputFileSuffix` option is no longer supported.',
+                'The following configuration:',
+                '',
+                '    app: {',
+                '        options: {',
+                '            outputFileSuffix: \'-annotated\',',
+                '        },',
+                '        src: [\'app/*.js\'],',
+                '    },',
+                '',
+                'should be replaced by:',
+                '',
+                '    app: {',
+                '        files: [',
+                '            {',
+                '               expand: true,',
+                '               src: [\'app/*.js\'],',
+                '               rename: function (destPath, srcPath) {',
+                '                   return srcPath + \'-annotated\';',
+                '               },',
+                '            },',
+                '        ],',
+                '    },',
+            ].join('\n'));
         }
 
         return finalOptions;
     };
 
-    grunt.registerMultiTask(&#x27;ngAnnotate&#x27;,
-        &#x27;Add, remove and rebuild AngularJS dependency injection annotations&#x27;,
+    grunt.registerMultiTask('ngAnnotate',
+        'Add, remove and rebuild AngularJS dependency injection annotations',
 
         function () {
             let filesNum = 0;
@@ -234,12 +227,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">ng_annotate = function (grunt) {
 
-    const getPathFromTo = (fromFile, toFile) =&#x3e;
+    const getPathFromTo = (fromFile, toFile) =&gt;
         path.relative(path.resolve(path.dirname(fromFile)), path.resolve(toFile))
             // URLs should have UNIX-y paths.
-            .replace(/\\+/g, &#x27;/&#x27;);
+            .replace(/\\+/g, '/');
 
-    const handleOptions = options =&#x3e; {
+    const handleOptions = options =&gt; {
         const finalOptions = cloneDeep(options);
 
         if (!finalOptions.ngAnnotateOptions) {
@@ -283,67 +276,67 @@
 
         if (options.transformDest != null) {
             grunt.fail.fatal([
-                &#x27;The `transformDest` option is no longer supported.&#x27;,
-                &#x27;The following configuration:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        options: {&#x27;,
-                &#x27;            transformDest: function (srcPath) {&#x27;,
-                &#x27;                return doSomethingWithSrcPath(srcPath);&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        },&#x27;,
-                &#x27;        src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;    },&#x27;,
-                &#x27;&#x27;,
-                &#x27;should be replaced by:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        files: [&#x27;,
-                &#x27;           {&#x27;,
-                &#x27;               expand: true,&#x27;,
-                &#x27;               src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;               rename: function (destPath, srcPath) {&#x27;,
-                &#x27;                   return doSomethingWithSrcPath(srcPath);&#x27;,
-                &#x27;               },&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        ],&#x27;,
-                &#x27;    },&#x27;,
-            ].join(&#x27;\n&#x27;));
+                'The `transformDest` option is no longer supported.',
+                'The following configuration:',
+                '',
+                '    app: {',
+                '        options: {',
+                '            transformDest: function (srcPath) {',
+                '                return doSomethingWithSrcPath(srcPath);',
+                '            },',
+                '        },',
+                '        src: [\'app/*.js\'],',
+                '    },',
+                '',
+                'should be replaced by:',
+                '',
+                '    app: {',
+                '        files: [',
+                '           {',
+                '               expand: true,',
+                '               src: [\'app/*.js\'],',
+                '               rename: function (destPath, srcPath) {',
+                '                   return doSomethingWithSrcPath(srcPath);',
+                '               },',
+                '            },',
+                '        ],',
+                '    },',
+            ].join('\n'));
         }
 
         if (options.outputFileSuffix != null) {
             grunt.fail.fatal([
-                &#x27;The `outputFileSuffix` option is no longer supported.&#x27;,
-                &#x27;The following configuration:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        options: {&#x27;,
-                &#x27;            outputFileSuffix: \&#x27;-annotated\&#x27;,&#x27;,
-                &#x27;        },&#x27;,
-                &#x27;        src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;    },&#x27;,
-                &#x27;&#x27;,
-                &#x27;should be replaced by:&#x27;,
-                &#x27;&#x27;,
-                &#x27;    app: {&#x27;,
-                &#x27;        files: [&#x27;,
-                &#x27;            {&#x27;,
-                &#x27;               expand: true,&#x27;,
-                &#x27;               src: [\&#x27;app/*.js\&#x27;],&#x27;,
-                &#x27;               rename: function (destPath, srcPath) {&#x27;,
-                &#x27;                   return srcPath + \&#x27;-annotated\&#x27;;&#x27;,
-                &#x27;               },&#x27;,
-                &#x27;            },&#x27;,
-                &#x27;        ],&#x27;,
-                &#x27;    },&#x27;,
-            ].join(&#x27;\n&#x27;));
+                'The `outputFileSuffix` option is no longer supported.',
+                'The following configuration:',
+                '',
+                '    app: {',
+                '        options: {',
+                '            outputFileSuffix: \'-annotated\',',
+                '        },',
+                '        src: [\'app/*.js\'],',
+                '    },',
+                '',
+                'should be replaced by:',
+                '',
+                '    app: {',
+                '        files: [',
+                '            {',
+                '               expand: true,',
+                '               src: [\'app/*.js\'],',
+                '               rename: function (destPath, srcPath) {',
+                '                   return srcPath + \'-annotated\';',
+                '               },',
+                '            },',
+                '        ],',
+                '    },',
+            ].join('\n'));
         }
 
         return finalOptions;
     };
 
-    grunt.registerMultiTask(&#x27;ngAnnotate&#x27;,
-        &#x27;Add, remove and rebuild AngularJS dependency injection annotations&#x27;,
+    grunt.registerMultiTask('ngAnnotate',
+        'Add, remove and rebuild AngularJS dependency injection annotations',
 
         function () {
             let filesNum = 0;
@@ -361,3 +354,4 @@
     ]
 </div>
 </div>
+</body></html>
