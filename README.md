@@ -1,9 +1,14 @@
-# api documentation for  [grunt-ng-annotate (v3.0.0)](https://github.com/mgol/grunt-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate)
+# npmdoc-grunt-ng-annotate
+
+#### api documentation for  [grunt-ng-annotate (v3.0.0)](https://github.com/mgol/grunt-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate)
+
 #### Add, remove and rebuild AngularJS dependency injection annotations.
 
-[![NPM](https://nodei.co/npm/grunt-ng-annotate.png?downloads=true)](https://www.npmjs.com/package/grunt-ng-annotate)
+[![NPM](https://nodei.co/npm/grunt-ng-annotate.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-ng-annotate)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-ng-annotate_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-ng-annotate/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Michał Gołębiowski",
-        "email": "m.goleb@gmail.com"
+        "name": "Michał Gołębiowski"
     },
     "bugs": {
         "url": "https://github.com/mgol/grunt-ng-annotate/issues"
@@ -78,8 +82,7 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "m_gol",
-            "email": "m.goleb@gmail.com"
+            "name": "m_gol"
         }
     ],
     "name": "grunt-ng-annotate",
@@ -87,7 +90,6 @@
     "peerDependencies": {
         "grunt": ">=0.4.5"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mgol/grunt-ng-annotate.git"
@@ -98,16 +100,6 @@
     "version": "3.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-ng-annotate](#apidoc.module.grunt-ng-annotate)
-
-
-
-# <a name="apidoc.module.grunt-ng-annotate"></a>[module grunt-ng-annotate](#apidoc.module.grunt-ng-annotate)
 
 
 
