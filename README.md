@@ -1,6 +1,6 @@
 # npmdoc-grunt-ng-annotate
 
-#### api documentation for  [grunt-ng-annotate (v3.0.0)](https://github.com/mgol/grunt-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate)
+#### basic api documentation for  [grunt-ng-annotate (v3.0.0)](https://github.com/mgol/grunt-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-ng-annotate)
 
 #### Add, remove and rebuild AngularJS dependency injection annotations.
 
@@ -97,7 +97,8 @@
     "scripts": {
         "test": "grunt"
     },
-    "version": "3.0.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
